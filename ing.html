@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图书信息展示</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0 200px;
+      padding: 20px;
+    }
+    
+
+    .book {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    
+    .book img {
+      width: 150px;
+      height: 200px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+    
+    .book-info {
+      flex-grow: 1;
+    }
+    
+    .book-title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    .book-description {
+      margin-bottom: 10px;
+    }
+    
+    .book-rating {
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="book">
+    <a href="https://www.777zw.cc/4/4438/">
+        <img src="https://p.qpic.cn/vshpic/124096690/ahoc1kMerfUNfnEu7Tt_lhtWwWMq4cHlj2iLmTmngMBvqxYp_8/0/100" alt="图书封面">
+    </a>
+    <div class="book-info">
+      <h2 class="book-title">全职法师</h2>
+      <p class="book-description">一觉醒来，世界大变。 熟悉的高中传授的是魔法，
+        告诉大家要成为一名出色的魔法师。 居住的都市之外游荡着袭击人类的魔物妖兽，
+        虎视眈眈。 崇尚科学的世界变成了崇尚魔法，偏偏有着一样以学渣看待自己的老师，
+        一样目光异样的同学，一样社会底层挣扎的爸爸，一样纯美却不能走路的非血缘妹妹…… 
+        不过，莫凡发现绝大多数人都只能够主修一系魔法，自己却是全系全能法师！</p>
+      <p class="book-rating">评分: 4.5 / 5</p>
+      <p class="book-rating">评价: 前期稍微压抑，后期燃起来，多女主，坑没填完！</p>
+    </div>
+  </div>
+  
+  <div class="book">
+    <img src="book2.jpg" alt="图书封面">
+    <div class="book-info">
+      <h2 class="book-title">图书名称</h2>
+      <p class="book-description">图书简介...</p>
+      <p class="book-rating">评分: 4.2 / 5</p>
+      <p class="book-rating">评价: 80人评价</p>
+    </div>
+  </div>
+  
+  <!-- 添加更多图书块 -->
+</body>
+</html>
