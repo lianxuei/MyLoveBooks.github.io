@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>完结图书信息展示</title>
+  <title>连载图书信息展示</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -11,6 +11,22 @@
       padding: 20px;
     }
 
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .navbar-logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar-links a {
+      margin-right: 10px;
+    }
+    
     .book {
       display: flex;
       align-items: center;
@@ -42,28 +58,17 @@
       color: #888;
       margin-bottom: 5px;
     }
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 30px;
-    }
-
-    .navbar-logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    .navbar-links a {
-      margin-right: 10px;
-      text-decoration: none;
-    }
   
     @media screen and (max-width: 600px) {
       body {
         padding: 10px;
       }
 
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      
       .book {
         flex-direction: column;
       }
@@ -77,12 +82,13 @@
 </head>
 <body>
   <nav class="navbar">
-    <div class="navbar-logo">完结图书</div>
+    <div class="navbar-logo">连载图书</div>
     <div class="navbar-links">
-      <a href="index.html" target="_blank">首页</a>
-      <a href="ing.html" target="_blank">连载图书</a>
+      <a href="https://www.777zw.cc/" target="_blank">首页</a>
+      <a href="https://www.777zw.cc/finish.html" target="_blank">完本</a>
     </div>
   </nav>
+
   <div class="book">
     <a href="https://www.777zw.cc/4/4438/">
       <img src="https://p.qpic.cn/vshpic/124096690/ahoc1kMerfUNfnEu7Tt_lhtWwWMq4cHlj2iLmTmngMBvqxYp_8/0/100" alt="图书封面">
@@ -96,16 +102,6 @@
         不过，莫凡发现绝大多数人都只能够主修一系魔法，自己却是全系全能法师！</p>
       <p class="book-rating">评分: 4.5 / 5</p>
       <p class="book-rating">评价: 前期稍微压抑，后期燃起来，多女主，坑没填完！</p>
-    </div>
-  </div>
-  
-  <div class="book">
-    <img src="book2.jpg" alt="图书封面">
-    <div class="book-info">
-      <h2 class="book-title">图书名称</h2>
-      <p class="book-description">图书简介...</p>
-      <p class="book-rating">评分: 4.2 / 5</p>
-      <p class="book-rating">评价: 80人评价</p>
     </div>
   </div>
   

@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>图书信息展示</title>
+  <title>连载图书信息展示</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 0 200px;
+      margin: 0;
       padding: 20px;
     }
-    
 
     .book {
       display: flex;
@@ -41,23 +40,63 @@
     
     .book-rating {
       color: #888;
+      margin-bottom: 5px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+
+    .navbar-logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .navbar-links a {
+      margin-right: 10px;
+      text-decoration: none;
+    }
+  
+    @media screen and (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      .book {
+        flex-direction: column;
+      }
+      
+      .book img {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
     }
   </style>
 </head>
 <body>
+  <nav class="navbar">
+    <div class="navbar-logo">连载图书</div>
+    <div class="navbar-links">
+      <a href="index.html" target="_blank">首页</a>
+      <a href="complete.html" target="_blank">完本图书</a>
+    </div>
+  </nav>
   <div class="book">
-    <a href="https://www.777zw.cc/4/4438/">
-        <img src="https://p.qpic.cn/vshpic/124096690/ahoc1kMerfUNfnEu7Tt_lhtWwWMq4cHlj2iLmTmngMBvqxYp_8/0/100" alt="图书封面">
+    <a href="https://www.qidian.com/book/1037239274/">
+      <img src="https://bookcover.yuewen.com/qdbimg/349573/1037239274/600.webp" alt="图书封面">
     </a>
     <div class="book-info">
-      <h2 class="book-title">全职法师</h2>
-      <p class="book-description">一觉醒来，世界大变。 熟悉的高中传授的是魔法，
-        告诉大家要成为一名出色的魔法师。 居住的都市之外游荡着袭击人类的魔物妖兽，
-        虎视眈眈。 崇尚科学的世界变成了崇尚魔法，偏偏有着一样以学渣看待自己的老师，
-        一样目光异样的同学，一样社会底层挣扎的爸爸，一样纯美却不能走路的非血缘妹妹…… 
-        不过，莫凡发现绝大多数人都只能够主修一系魔法，自己却是全系全能法师！</p>
+      <h2 class="book-title">迪迦：从哥尔赞开始的无限进化</h2>
+      <p class="book-description">林夜意外穿越迪迦奥特曼的世界，发现自己竟然穿成了超古代怪兽哥尔赞？
+        而且还是刚拆完金字塔，被迪迦打跑的状态！
+        这特么怎么办？
+        跟原剧情一样，找个火山吸收能量强化自己，然后被迪迦干掉？
+        还是说，想办法去夺取力量，一点一点进化至巅峰！</p>
       <p class="book-rating">评分: 4.5 / 5</p>
-      <p class="book-rating">评价: 前期稍微压抑，后期燃起来，多女主，坑没填完！</p>
+      <p class="book-rating">评价: 穿越元素，迪化。目前包含迪迦，戴拿的故事，主角不断吸收能量升级，获取能量的行为却被意外脑补成救世主！</p>
     </div>
   </div>
   
