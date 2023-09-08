@@ -12,12 +12,18 @@
     }
     
     header {
-      text-align: center;
+      margin-top: 50px;
       margin-bottom: 20px;
     }
     
     h1 {
       color: #333;
+      text-align: right;
+    }
+
+    h2 {
+      color: #333;
+      text-align: left;
     }
     
     nav {
@@ -103,60 +109,99 @@
       margin-bottom: 5px;
     }
 
+    .book-status {
+      font-weight: bold;
+    }
+
+    .unfinished {
+      color: red;
+    }
+
+    .finished {
+      color: green;
+    }
+
+
     @media only screen and (max-width: 600px) {
     /* 手机屏幕样式 */
-    main {
-      width: 100%;
-    }
-    
-    .book img {
-      width: 100px;
-      height: 150px;
-      margin-right: 10px;
-    }
-    
-    .book-info {
-      flex-grow: 1;
-    }
-    
-    .book-title {
-      font-size: 16px;
-    }
-}
+      main {
+        width: 100%;
+      }
+      
+      .book img {
+        width: 100px;
+        height: 150px;
+        margin-right: 10px;
+      }
+      
+      .book-info {
+        flex-grow: 1;
+      }
+      
+      .book-title {
+        font-size: 16px;
+      }
+   }
 
   </style>
 </head>
 <body>
   <header>
     <h1>个人图书推荐</h1>
+    <h2>强烈推荐</h2>
   </header>
   
   <nav>
     <ul>
       <li><a href="index.html"><span style="color: blue;">首页</span></a></li>
-      <li><a href="complete.html">已完结</a></li>
-      <li><a href="ing.html">连载中</a></li>
+      <li><a href="complete.html"><span style="color: rgb(56, 60, 7);">已完结</span></a></li>
+      <li><a href="ing.html"><span style="color: rgb(56, 60, 7);">连载中</span></a></li>
       <!-- 添加更多章节链接 -->
     </ul>
   </nav>
   
   <main>
     <div class="book">
-    <a href="https://www.777zw.cc/4/4438/">
-      <img src="https://p.qpic.cn/vshpic/124096690/ahoc1kMerfUNfnEu7Tt_lhtWwWMq4cHlj2iLmTmngMBvqxYp_8/0/100" alt="图书封面">
-    </a>
-    <div class="book-info">
-      <h2 class="book-title">全职法师</h2>
-      <p class="book-description">一觉醒来，世界大变。 熟悉的高中传授的是魔法，
-        告诉大家要成为一名出色的魔法师。 居住的都市之外游荡着袭击人类的魔物妖兽，
-        虎视眈眈。 崇尚科学的世界变成了崇尚魔法，偏偏有着一样以学渣看待自己的老师，
-        一样目光异样的同学，一样社会底层挣扎的爸爸，一样纯美却不能走路的非血缘妹妹…… 
-        不过，莫凡发现绝大多数人都只能够主修一系魔法，自己却是全系全能法师！</p>
-      <p class="book-rating">评分: 4.5 / 5</p>
-      <p class="book-rating">评价: 前期稍微压抑，后期燃起来，多女主，坑没填完！</p>
+      <a href="https://www.qidian.com/book/1029391348/">
+        <img src="https://bookcover.yuewen.com/qdbimg/349573/1029391348/600.webp" alt="图书封面">
+      </a>
+      <div class="book-info">
+        <a href="https://www.qidian.com/book/1029391348/">
+          <h2 class="book-title">这游戏也太真实了</h2>
+        </a>
+        <p class="book-description">这游戏也太真实了叭！
+          搬砖、跑腿、捡垃圾、送快递……公司最多能让你体会到996的艰辛，在这里你能体会到超级加倍的007。
+          好了，不废话了，伟大的管理者大人喊我去搬砖了。
+          那位大人说了，只要我们努力献上自己的肝，下个月他又能换一套全新的动力甲，到时候带我们开全新的地图，去广阔的废土捡更多的垃圾！
+          ……
+          穿越到废土世界的楚光发现，自己解锁了避难所系统，能够从平行世界召唤名为“玩家”的生物。
+          从那天开始，整个废土都不正经了。</p>
+        <p class="book-rating">作者: 晨星LL </p>
+        <p class="book-rating">评价: 经营，玩家一步步成长，联合全人类一起来走向新世界的故事！</p>
+        <p class="book-status unfinished">未完结</p>
+
+      </div>
     </div>
-  </div>
-    
+    <div class="book">
+      <a href="https://www.qidian.com/book/1029391348/">
+        <img src="https://bookcover.yuewen.com/qdbimg/349573/1031148907/600.webp" alt="图书封面">
+      </a>
+      <div class="book-info">
+        <a href="https://www.qidian.com/book/1029391348/">
+          <h2 class="book-title">大乘期才有逆袭系统</h2>
+        </a>
+        <p class="book-description">
+          江离穿越过来，发现没有金手指，只能老老实实的修炼，五百年后，他成为九州最强者，突然出现一个系统，说能帮宿主从练气期逆袭成为九州第一人。
+          江离看着第一个任务，陷入沉思。
+          “请宿主打败你的堂哥（练气六层）。”
+          “你这系统延迟的挺严重啊。”
+          【本书欢乐向】</p>
+        <p class="book-rating">作者: 最白的乌鸦 </p>
+        <p class="book-rating">评价: 无敌流，人皇，多世界，系统。反套路，值得一看！</p>
+        <p class="book-status finished">已完结</p>
+
+      </div>
+    </div>
     
   </main>
   
